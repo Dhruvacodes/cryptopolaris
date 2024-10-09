@@ -84,6 +84,9 @@ Here is your flag:
 pwn.college{A9OGIR7RKnkZqxvbCKw43ZwLt7l.dBzN1QDL4ETN0czW}
 hacker@piping~redirecting-input:~$ 
 ```
+We can use < to redirect input into programs.
+Here we first redirected COLLEGE into PWN and then redirected it's input into /challenge/run.
+
 # 6.) Grepping Stored Results
 
 ```bash
