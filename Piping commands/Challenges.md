@@ -1,4 +1,4 @@
-# 1.) Riderecting Output
+# 1.) Redirecting Output
 
 ```bash
 hacker@piping~redirecting-output:~$ echo PWN > COLLEGE
@@ -6,6 +6,8 @@ Correct! You successfully redirected 'PWN' to the file 'COLLEGE'! Here is your
 flag:
 pwn.college{8HLCEb_5jprH-GasMJVc0VrzN-0.dRjN1QDL4ETN0czW}
 ```
+we can use the > command to redirect the output of a command to another file.
+Here I redirected PWN to COLLEGE which would have printed PWN when I would have called for COLLEGE.
 
 # 2.) Ridirecting More Output 
 
@@ -29,6 +31,11 @@ hacker@piping~redirecting-more-output:~$ cat myflag
 [FLAG] Here is your flag:
 [FLAG] pwn.college{0OqiVi5TnHqg92SyAWlB5upi7Dt.dVjN1QDL4ETN0czW}
 ```
+We verified that > can be used to redirect the content of files to other files as well. 
+used > to redirect /challenge/run to myflag.
+Then, I used the cat command to read myflag.
+easy!
+
 # 3.) Appending output 
 
 ```bash
@@ -48,6 +55,9 @@ overwrote the initial write of the first half directly to the file. Try append
 mode!
 stdout
 ```
+We can use >> to append a file. 
+In this case, I appended stdout to the /home/hacker/the-flag file 
+Then, I used the cat command to read into it.
 
 # 4.) Redirecting errors
 
@@ -59,6 +69,7 @@ hacker@piping~redirecting-errors:~$ cat myflag
 [FLAG] pwn.college{oFGWMtBD5EmHGunMyZI8LvmShTW.ddjN1QDL4ETN0czW}
 
 ```
+
 # 5.) Redirecting input
 
 ```bash
