@@ -223,3 +223,6 @@ struggle with! Here is your flag:
 pwn.college{IhoqKWRTATKD7YJYCz3bnYW9dWe.dFDNwYDL4ETN0czW} sav it
 
 ```
+We used /challenge/hack to get stdout and stderr. (output and error).
+Then > > to redirect stdout to /challenge/planet.
+Then we used 2> > to redirect stderr to /challenge/the
