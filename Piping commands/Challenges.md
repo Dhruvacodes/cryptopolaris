@@ -174,6 +174,29 @@ hacker@piping~grepping-errors:~$
 ```
 # 9.) Duplicating piped data with tee
 
+```bash
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn |tee output | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code 
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the 
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ cat output
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "UBZZdl2X"
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret "UBZZdl2X"
+Processing...
+You must pipe the output of /challenge/pwn into /challenge/college (or 'tee' 
+for debugging).
+hacker@piping~duplicating-piped-data-with-tee:~$  /challenge/pwn --secret "UBZZdl2X" | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{UBZZdl2XKWt9zIZMtPGzJFXdJBZ.dFjM5QDL4ETN0czW}
+hacker@piping~duplicating-piped-data-with-tee:~$ 
+
+```
+
 # 10.) Writing to multiple programs
 
 ```bash
