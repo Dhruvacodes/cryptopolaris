@@ -213,6 +213,7 @@ pwn.college{4iUxD7eZ1U-uYAGrIXxAJHn1Ene.dBDO0UDL4ETN0czW}
 hacker@piping~writing-to-multiple-programs:~$ 
 
 ```
+We used /challenge/hack to generate the output. Then we used tee to take the output from /challenge/hack and copy it. Now one copy goes to /challenge/the by pushing it there using > and the other goes to /challenge/planet.
 
 # 11.) Split piping stderr and stdout
 
