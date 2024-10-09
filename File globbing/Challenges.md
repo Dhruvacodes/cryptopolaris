@@ -10,6 +10,11 @@ You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{MEIKR5IJ3yn68LTuvNlFwN0Pjh8.dFjM4QDL4ETN0czW}
 hacker@globbing~matching-with-:/challenge$ 
 ```
+The shell sees a * in arguments as a "wildcard."
+It tries to find files matching the pattern to replace the argument.
+If no files match, the shell doesn't change the argument.
+The * can match any part of a filename, but not the / or a dot (.) at the start.
+Here we moved to the challenge directory using /ch*.
 
 # Matching with ? 
 
