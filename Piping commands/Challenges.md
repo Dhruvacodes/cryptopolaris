@@ -142,6 +142,9 @@ pwn.college{Qz88QvSvJALOONzPm_Vrpixand8.dlTM4QDL4ETN0czW}
 hacker@piping~grepping-live-output:~$ 
 
 ```
+Use the | (pipe) operator to avoid saving results to a file, making things simpler.
+This connects the output of the command on the left directly into the input of the command on the right. 
+
 # 8.) Grepping errors
 
 ```bash
