@@ -172,6 +172,11 @@ pwn.college{cdEOJYa8_cNquYUzx3_85VFh3Dk.dVDM5QDL4ETN0czW}
 hacker@piping~grepping-errors:~$ 
 
 ```
+We redirected standard error to standard output using >& .
+Then we piped both error and output using |
+Finally we used grep to find the key that always starts with pwn.college{
+
+
 # 9.) Duplicating piped data with tee
 
 ```bash
