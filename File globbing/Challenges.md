@@ -38,6 +38,7 @@ You got it! Here is your flag!
 pwn.college{4shLUfd7lORHo0w7vnt1DVC_U2X.dNjM4QDL4ETN0czW}
 hacker@globbing~matching-with-:/challenge/files$ 
 ```
+[] is a limited form of ? where we provide a subset to potential characters to search for. For example, here [bash] will search for files with b, a, s, or h in the ending.
 
 # Matching paths with []
 
@@ -47,6 +48,8 @@ You got it! Here is your flag!
 pwn.college{4DcLwp7gLOQr8GifbsZmS0o4Y-s.dRjM4QDL4ETN0czW}
 hacker@globbing~matching-paths-with-:~$ 
 ```
+We can use [] to expand paths as well.
+
 # Mixing globs
 
 ```bash
@@ -56,6 +59,9 @@ You got it! Here is your flag!
 pwn.college{I2_HzV8v4gpw3aE4GB9gPY-kSs-.dVjM4QDL4ETN0czW}
 hacker@globbing~mixing-globs:/challenge/files$ 
 ```
+First, we moved to the /challenges/files directory using cd as mentioned in the question
+Then we used [cep]* to find a file that starts with c,e, or p and used * to expand our search to  "challenging", "educational", and "pwning".
+
 # Exclusionary Globbing
 
 ```bash
@@ -65,3 +71,4 @@ You got it! Here is your flag!
 pwn.college{sf1MhC-D8-885IHKEwKfuC3Slr-.dZjM4QDL4ETN0czW}
 hacker@globbing~exclusionary-globbing:/challenge/files$ 
 ```
+If we use ! or ^ inside a [], it will look for characters that are not listed inside it.
