@@ -198,9 +198,10 @@ Processing...
 Correct! Passing secret value to /challenge/college...
 Great job! Here is your flag:
 pwn.college{UBZZdl2XKWt9zIZMtPGzJFXdJBZ.dFjM5QDL4ETN0czW}
-hacker@piping~duplicating-piped-data-with-tee:~$ 
-
 ```
+Directed contents of /challenge/pwn to output and college.
+The input to challenge was wrong, but we can still read the output file.
+We got a secret code that gave the flag on running with the correct argument.
 
 # 10.) Writing to multiple programs
 
