@@ -122,3 +122,5 @@ pwn.college{g6RLVf7MiPFJJw0Gm7YMoMaQ0Xc.dRTM5QDL4ETN0czW}
 
 hacker@man~help-for-builtins:~$ 
 ```
+Learnt about builtin commands. 
+Shell builtins are functions that are stored within the shell.
