@@ -217,6 +217,9 @@ hacker@piping~writing-to-multiple-programs:~$
 # 11.) Split piping stderr and stdout
 
 ```bash
-pwn.college{IhoqKWRTATKD7YJYCz3bnYW9dWe.dFDNwYDL4ETN0czW}
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >( /challenge/planet ) 2> >( /challenge/the )
+Congratulations, you have learned a redirection technique that even experts 
+struggle with! Here is your flag:
+pwn.college{IhoqKWRTATKD7YJYCz3bnYW9dWe.dFDNwYDL4ETN0czW} sav it
 
 ```
