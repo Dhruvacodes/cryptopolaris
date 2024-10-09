@@ -71,5 +71,39 @@ hacker@man~searching-manuals:~$
 # Searching for manuals
 
 ```bash
+hacker@man~searching-for-manuals:~$ man man
+hacker@man~searching-for-manuals:~man -K challenge
+hacker@man~searching-for-manuals:~$ /challenge/challenge --hqkvbb 683
+Correct usage! Your flag: pwn.college{UJEhqWkv6bb8KZK3uU94NvuVBdG.dZTM4QDL4ETN0czW}
+```
+# Helpful Programs
 
+```bash
+hacker@man~helpful-programs:~$ /challenge/challenge --help
+hacker@man~helpful-programs:~$ /challenge/challenge -p
+The secret value is: 952
+hacker@man~helpful-programs:~$ /challenge/challenge -g 952            
+Correct usage! Your flag: pwn.college{M9WrEqT5XAJcVGUYwRTditV2z6E.ddjM4QDL4ETN0czW}
+hacker@man~helpful-programs:~$ 
+```
+
+# Help for Builtins
+
+```bash
+hacker@man~help-for-builtins:~$ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune		display a fortune
+      --version		display the version
+      --secret VALUE	prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "g6RLVf7M".
+hacker@man~help-for-builtins:~$ challenge --secret g6RLVf7M
+Correct! Here is your flag!
+pwn.college{g6RLVf7MiPFJJw0Gm7YMoMaQ0Xc.dRTM5QDL4ETN0czW}
+
+hacker@man~help-for-builtins:~$ 
 ```
