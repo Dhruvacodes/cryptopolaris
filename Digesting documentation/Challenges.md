@@ -124,3 +124,5 @@ hacker@man~help-for-builtins:~$
 ```
 Learnt about builtin commands. 
 Shell builtins are functions that are stored within the shell.
+Used help challenge to find builtins in challenge.
+Then used the correct argument to find the flag.
