@@ -52,5 +52,22 @@ stdout
 # 4.) Redirecting errors
 
 ```bash
+hacker@piping~redirecting-errors:~$ /challenge/run > myflag 2> instructions
+hacker@piping~redirecting-errors:~$ cat myflag
 
+[FLAG] Here is your flag:
+[FLAG] pwn.college{oFGWMtBD5EmHGunMyZI8LvmShTW.ddjN1QDL4ETN0czW}
+
+```
+# 5.) Redirecting input
+
+```bash
+hacker@piping~redirecting-input:~$ echo COLLEGE > PWN
+hacker@piping~redirecting-input:~$ /challenge/run < PWN
+Reading from standard input...
+Correct! You have redirected the PWN file into my standard input, and I read 
+the value 'COLLEGE' out of it!
+Here is your flag:
+pwn.college{A9OGIR7RKnkZqxvbCKw43ZwLt7l.dBzN1QDL4ETN0czW}
+hacker@piping~redirecting-input:~$ 
 ```
