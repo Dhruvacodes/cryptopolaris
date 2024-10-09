@@ -25,6 +25,9 @@ You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{wECIEolE7IIAkRiMhkmDIuHwxkS.dJjM4QDL4ETN0czW}
 hacker@globbing~matching-with-:/challenge$ 
 ```
+The shell sees a ? in arguments as a "wildcard" too.
+The ? can match any part of a filename, but not the / or a dot (.) at the start.
+The only difference is that it matches only one character.
 
 # Matching with []
 
