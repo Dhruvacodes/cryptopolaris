@@ -69,6 +69,8 @@ hacker@piping~redirecting-errors:~$ cat myflag
 [FLAG] pwn.college{oFGWMtBD5EmHGunMyZI8LvmShTW.ddjN1QDL4ETN0czW}
 
 ```
+we can use a file descriptor before > so that we can specify whether it's an output error or input. By default,> means 1>, which is the standard output. 0 is input, and 2 is output.
+We can do multiple redirections in one go. Here, I first redirected the output of /challenge/run to myflag, and the error in the file was sent to instructions.
 
 # 5.) Redirecting input
 
