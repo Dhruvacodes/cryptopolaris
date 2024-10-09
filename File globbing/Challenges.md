@@ -31,4 +31,29 @@ pwn.college{4shLUfd7lORHo0w7vnt1DVC_U2X.dNjM4QDL4ETN0czW}
 hacker@globbing~matching-with-:/challenge/files$ 
 ```
 
-# 
+# Matching paths with []
+
+```bash
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[bash]
+You got it! Here is your flag!
+pwn.college{4DcLwp7gLOQr8GifbsZmS0o4Y-s.dRjM4QDL4ETN0czW}
+hacker@globbing~matching-paths-with-:~$ 
+```
+# Mixing globs
+
+```bash
+hacker@globbing~mixing-globs:~$ cd /challenge/files
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [cep]*
+You got it! Here is your flag!
+pwn.college{I2_HzV8v4gpw3aE4GB9gPY-kSs-.dVjM4QDL4ETN0czW}
+hacker@globbing~mixing-globs:/challenge/files$ 
+```
+# Exclusionary Globbing
+
+```bash
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{sf1MhC-D8-885IHKEwKfuC3Slr-.dZjM4QDL4ETN0czW}
+hacker@globbing~exclusionary-globbing:/challenge/files$ 
+```
