@@ -113,7 +113,10 @@ pwn.college{YA7QgmTCyJTJunVT5YrnKT5wuiu.dhTM4QDL4ETN0czW}
 hacker@piping~grepping-stored-results:~$ 
 
 ```
-7.) Grepping live output
+Redirected the output of /challenge/run to /tmp/data.txt
+The used the grep command to find the key from /tmp/data.txt. WE KNOW THAT THE KEY STARTS WITH pwn.college{ .
+
+# 7.) Grepping live output
 
 ```bash
 hacker@piping~grepping-live-output:~$ /challenge/run | grep pwn.college{
@@ -166,9 +169,9 @@ pwn.college{cdEOJYa8_cNquYUzx3_85VFh3Dk.dVDM5QDL4ETN0czW}
 hacker@piping~grepping-errors:~$ 
 
 ```
-9.) Duplicating piped data with tee
+# 9.) Duplicating piped data with tee
 
-10.) Writing to multiple programs
+# 10.) Writing to multiple programs
 
 ```bash
 Connected!                                                                        
@@ -180,7 +183,7 @@ hacker@piping~writing-to-multiple-programs:~$
 
 ```
 
-11.) Split piping stderr and stdout
+# 11.) Split piping stderr and stdout
 
 ```bash
 pwn.college{IhoqKWRTATKD7YJYCz3bnYW9dWe.dFDNwYDL4ETN0czW}
