@@ -7,6 +7,8 @@ Correct argument! Here is your flag:
 pwn.college{czq09yVRY9Q67AO7DHoXq90pnOz.dRjM5QDL4ETN0czW}
 hacker@man~learning-from-documentation:~$
 ```
+Here we learnt how to give arguments. 
+The format for giving arguments can be <filename> -- argument
 
 # Learning Complex usage 
 
@@ -16,6 +18,8 @@ Correct argument! Here is the /flag file:
 pwn.college{IBdPf33uvUZwkVlr7SqiZ8Wf9ky.dVjM5QDL4ETN0czW}
 hacker@man~learning-complex-usage:~$ 
 ```
+Here we went one step ahead.
+-- printfile was already an argument and we gave it another argument which in this case is the path of the flag to be read.
 
 # Reading manuals 
 
@@ -57,6 +61,8 @@ hacker@man~reading-manuals:~$ /challenge/challenge --gjdgun 116
 Correct usage! Your flag: pwn.college{MgXj_dg1u1nNahoyUjMb6uCY-se.dRTM4QDL4ETN0czW}
 hacker@man~reading-manuals:~$ 
 ```
+The purpose of this question was to teach us the man command.
+The man command is short for manual and is used to access manual of the argument.
 
 # Searching Manuals
 
@@ -67,6 +73,8 @@ Initializing...
 Correct usage! Your flag: pwn.college{AMiZxDEOoBzQJSXHnXAZa-dp-Qr.dVTM4QDL4ETN0czW}
 hacker@man~searching-manuals:~$ 
 ```
+Used the ? command to find out the correct argument to find the flag
+This argument is important because say for example in this case, I had 1694 lines which is impossible to go through manually, thus we need a command to find required text instantly.
 
 # Searching for manuals
 
@@ -76,6 +84,10 @@ hacker@man~searching-for-manuals:~man -K challenge
 hacker@man~searching-for-manuals:~$ /challenge/challenge --hqkvbb 683
 Correct usage! Your flag: pwn.college{UJEhqWkv6bb8KZK3uU94NvuVBdG.dZTM4QDL4ETN0czW}
 ```
+This was a complex program but the commands were easy.
+Basically we had to use the man command for man to find other manuals.
+After finding a relevant module we had to find the valid argument from it to find the key.
+
 # Helpful Programs
 
 ```bash
@@ -86,6 +98,9 @@ hacker@man~helpful-programs:~$ /challenge/challenge -g 952
 Correct usage! Your flag: pwn.college{M9WrEqT5XAJcVGUYwRTditV2z6E.ddjM4QDL4ETN0czW}
 hacker@man~helpful-programs:~$ 
 ```
+used the help argument to find information about challenge
+then used given argument -p to find value for argument
+finally used -q as argument for fiding the flag
 
 # Help for Builtins
 
