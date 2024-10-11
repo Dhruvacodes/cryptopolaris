@@ -18,7 +18,6 @@ hacker@paths~position-thy-self:~$ cd /usr/share/build-essential
 hacker@paths~position-thy-self:/usr/share/build-essential$ cd /challenge/run
 ssh-entrypoint: cd: /challenge/run: Not a directory
 hacker@paths~position-thy-self:/usr/share/build-essential$ cd /usr/share/build-essential
-hacker@paths~position-thy-self:/usr/share/build-essential$ cd /usr/share/build-essential
 hacker@paths~position-thy-self:/usr/share/build-essential$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
