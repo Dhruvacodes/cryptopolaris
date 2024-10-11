@@ -8,12 +8,6 @@ pwn.college{EX286eZuqQX2rygCEE17wVqdBDU.dNzM4QDL4ETN0czW}
 hacker@paths~home-sweet-home:~$ 
 ```
 
-Asked GPT to explain and it did so beautifully
-
-
-
-Here's a breakdown:
-
 1. /challenge/run is the executable that, when run, will generate or retrieve the flag.
 2. The program accepts a path argument that tells it where to save the flag.
 3. The constraints specify that the path must:
