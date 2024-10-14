@@ -53,6 +53,6 @@ You've set the PWN variable to the proper value!
 You've set the COLLEGE variable to the proper value!
 hacker@variables~exporting-variables:~$
 ```
-
+A variable set in a shell is local to that particular shell, and thus, to inherit them in other shell processes, we can use the export command. When you export your variables, they are passed into the environment variables of child processes.
 
 
