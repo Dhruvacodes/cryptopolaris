@@ -89,8 +89,18 @@ pwn.college{Ao1NVZCg-jpAr3lEqIF8BpW_dIA.dNTM5QDL4ETN0czW}
 Solved the same game but with = and - commands this time.
 = can be used to set the permissions simply.
 
+# 8) The SUID bit
 
+```bash
+hacker@permissions~the-suid-bit:~$ chmod u+s /challenge/getroot
+hacker@permissions~the-suid-bit:~$ /challenge/getroot
+SUCCESS! You have set the suid bit on this program, and it is running as root! 
+Here is your shell...
+root@permissions~the-suid-bit:~# cat /flag
+pwn.college{0xxije_ZS2G608LphCRqkUpJqyX.dNTM2QDL4ETN0czW}
+```
 
+Used the u+s command to grant access to the user to run /challenge/getroot as the root user.
 
 
 
