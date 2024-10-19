@@ -25,9 +25,8 @@ Here, we added the /challenge/more_commands directory to PATH to expose the win 
 # 3) Adding commands
 
 ```bash
-hacker@path~adding-commands:~$ touch win
-hacker@path~adding-commands:~$ echo cat /flag > win
-hacker@path~adding-commands:~$ chmod u+x win
+hacker@path~adding-commands:~$ echo cat /flag > win.sh
+hacker@path~adding-commands:~$ chmod u+x win.sh
 hacker@path~adding-commands:~$ echo $PATH
 /run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 hacker@path~adding-commands:~$ PATH="/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/hacker"
@@ -35,6 +34,11 @@ hacker@path~adding-commands:~$ /challenge/run
 Invoking 'win'....
 pwn.college{kt4BApwCrhuLz61oeOH4eJm15_d.dZzNyUDL4ETN0czW}
 ```
+Redirected the contents of /flag to win.
+Made win executable.
+Read the contents of PATH variable.
+Updated the PATH variable to include the directory where win is located.
+Execute /challenge/run.
 
 
 # 4) Hijacking commands
