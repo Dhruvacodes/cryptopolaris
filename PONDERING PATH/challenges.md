@@ -32,4 +32,8 @@ hacker@path~hijacking-commands:~$ /challenge/run
 Trying to remove /flag...
 pwn.college{sanpZYet1GQYrcursgDsp-vy307.ddzNyUDL4ETN0czW}
 ```
+Redirected flag to rm. Used the absolute path of cat because PATH has been reset later.
+Made rm executable.
+Changed the path to /home/hacker
+Called /challenge/run.
 
