@@ -11,3 +11,12 @@ The shell will execute the first command and then move to the next command that 
 # 2) Your first shell script
 
 ```bash
+hacker@chaining~your-first-shell-script:~$ echo /challenge/pwn > x.sh
+hacker@chaining~your-first-shell-script:~$ echo /challenge/college >> x.sh
+hacker@chaining~your-first-shell-script:~$ bash x.sh
+Great job, you've written your first shell script! Here is the flag:
+pwn.college{MAtNnn0Mw1N1FoMPTgNt_G_qoSu.dFzN4QDL4ETN0czW}
+```
+Redirected output of /challenge/pwn to x.sh
+Appended output of /challenge/college to x.sh
+Invoked the script using bash to get the flag.
