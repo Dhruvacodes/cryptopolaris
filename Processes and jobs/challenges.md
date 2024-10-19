@@ -153,7 +153,57 @@ pwn.college{AXwDMPBM75aOsn5yvUnAplPulCt.ddDN4QDL4ETN0czW}
 Used the bg command to resume a process in the background.
 Here, we passed /challenge/run, suspended it, then resumed it in the background, and then called another copy to satisfy the problem statement.
 
+# 7) Foregrounding processes
 
+```bash
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and 
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          83 S+   bash /challenge/run
+Connected!                                                                        
+hacker@processes~foregrounding-processes:~$ /challenge/run
+To pass this level, you need to suspend me, resume the suspended process in the 
+background, and *then* foreground it without re-suspending it! You can 
+background me with Ctrl-Z (and resume me in the background with 'bg') or, if 
+you're not ready to do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~foregrounding-processes:~$ bg /challenge/run
+[1]+ /challenge/run &
+hacker@processes~foregrounding-processes:~$ 
+
+
+Yay, I'm now running the background! Because of that, this text will probably 
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times 
+to scroll this text out. After that, resume me into the foreground with 'fg'; 
+I'll wait.
+
+hacker@processes~foregrounding-processes:~$ fg /challenge/run
+/challenge/run
+YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+
+pwn.college{EBoh8Rpz-FAfyJORygp5ByOfSzj.dhDN4QDL4ETN0czW}
+```
+Used the fg command to bring a process running in the background to the foreground.
+
+# 8) Starting backgrounded processes
+
+```bash
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
+[1] 82
+hacker@processes~starting-backgrounded-processes:~$ 
+
+
+Yay, you started me in the background! Because of that, this text will probably 
+overlap weirdly with the shell prompt, but you're used to that by now...
+
+Anyways! Here is your flag!
+pwn.college{4SZm2BfuJCYbGGAnBqXf160VtSM.dlDN4QDL4ETN0czW}
+```
+We don't need to suspend a process and resume it to run it in the background. 
+This can be done simply by appending a & to the command.
 
 
 
