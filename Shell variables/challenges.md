@@ -93,5 +93,26 @@ Then, we used the second command, i.e. echo "$PWN" to read the flag stored in th
 The format for storing the output is VAR=$(OUTPUT COMMAND)
 ' ' can be used in place of $() , but it is not reccomended. 
 
+# 7) Reading Input
+
+```bash
+hacker@variables~reading-input:~$ read PWN
+COLLEGE
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{YIHD4LD2TMqMY5hHfjS7cwFc3fB.dhzN1QDL4ETN0czW}
+```
+The read builtin can be used to take input from the user and store it in a variable.
+Here, we took the input from the user in the PWN variable and then assigned the value COLLEGE to it.
+
+# 8) Reading files
+
+```bash
+hacker@variables~reading-files:~$ read PWN < /challenge/read_me
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{QJQoFrDtJ9mHyZE6qpS9gnXLRU3.dBjM4QDL4ETN0czW}
+```
+Here, we eliminated using the cat command.
+We redirected the standard output of /challenge/read_me into the standard input of read PWN. 
+So when the shell reads PWN, it will read the value from /challenge/run, which was redirected into the PWN variable.
 
 
