@@ -25,14 +25,13 @@ Here, we added the /challenge/more_commands directory to PATH to expose the win 
 # 3) Adding commands
 
 ```bash
-hacker@path~adding-commands:~$ cat /flag
-cat: /flag: Permission denied
 hacker@path~adding-commands:~$ touch win
 hacker@path~adding-commands:~$ PATH="/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/hacker"
 hacker@path~adding-commands:~$ /challenge/run
 Invoking 'win'....
 pwn.college{kt4BApwCrhuLz61oeOH4eJm15_d.dZzNyUDL4ETN0czW}
 ```
+
 
 # 4) Hijacking commands
 
