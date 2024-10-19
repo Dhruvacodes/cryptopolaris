@@ -20,3 +20,18 @@ pwn.college{MAtNnn0Mw1N1FoMPTgNt_G_qoSu.dFzN4QDL4ETN0czW}
 Redirected output of /challenge/pwn to x.sh
 Appended output of /challenge/college to x.sh
 Invoked the script using bash to get the flag.
+
+# 3) Redirecting script output
+
+```bash
+hacker@chaining~redirecting-script-output:~$ echo /challenge/pwn > x.sh
+hacker@chaining~redirecting-script-output:~$ echo /challenge/college >> x.sh
+hacker@chaining~redirecting-script-output:~$ bash x.sh | /challenge/solve
+Correct! Here is your flag:
+pwn.college{QWhj3BjB0AvqVQ7l-lppBw4ViK3.dhTM5QDL4ETN0czW}
+```
+Redirected output of /challenge/pwn to x.sh
+Appended output of /challenge/college to x.sh
+Piped the output of x.sh to /challenge/solve
+
+
