@@ -78,6 +78,20 @@ _=/run/workspace/bin/env
 ```
 We can use the env command to print every exported variable value.
 
-# 6) 
+# 6) Storing command output
+
+```bash
+hacker@variables~storing-command-output:~$ PWN=$(/challenge/run)
+Congratulations! You have read the flag into the PWN variable. Now print it out 
+and submit it!
+hacker@variables~storing-command-output:~$ echo "$PWN"
+pwn.college{cz85u3OfG2Ffe3qqjzXU9qSyBjv.dVzN0UDL4ETN0czW}
+```
+We learnt how to store the output of a command into a variable. 
+Here, we used the first command, i.e. PWN=$(/challenge/run), to store the output of /challenge/run in the variable PWN.
+Then, we used the second command, i.e. echo "$PWN" to read the flag stored in the variable PWN.
+The format for storing the output is <VARIABLE>=$(OUTPUT COMMAND)
+' ' can be used in place of $() , but it is not reccomended. 
+
 
 
