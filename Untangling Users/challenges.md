@@ -53,3 +53,11 @@ Used su to access zardus user
 Entered the shown password
 Successfully run /challenge/run
 
+# 4) Using sudo
+
+```bash
+hacker@users~using-sudo:~$ sudo cat /flag
+pwn.college{YD3wL56tWBAtwqc8UxSyL94-ka_.dhTN0UDL4ETN0czW}
+```
+Used the sudo command to gain access to the root user.
+sudo doesn't require the root password. Hence, it is easier to use and has replaced su.
