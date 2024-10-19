@@ -34,4 +34,14 @@ Redirected output of /challenge/pwn to x.sh
 Appended output of /challenge/college to x.sh
 Piped the output of x.sh to /challenge/solve
 
+# 4) Executable shell scripts
 
+```bash
+hacker@chaining~executable-shell-scripts:~$ echo /challenge/solve > x.sh
+hacker@chaining~executable-shell-scripts:~$ chmod a+x x.sh
+hacker@chaining~executable-shell-scripts:~$ ./x.sh
+Congratulations on your shell script execution! Your flag:
+pwn.college{o4YidcpsG4PwPngtZl5WouAy1Gq.dRzNyUDL4ETN0czW}
+```
+Made the script executable using chmod. 
+Directly executed the script given that it is now executable.
