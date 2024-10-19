@@ -43,3 +43,13 @@ Used the chmod function to change the permissions of a file or directory. It all
 chmod MODE FILE
 The mode is of format WHO+/-WHAT, where WHO is user(u)/group(g)/other(o/a) and WHAT is read(r)/write(w)/execute(x).
 
+# 5) Executable files
+
+```bash
+hacker@permissions~executable-files:~$ chmod a+x /challenge/run
+hacker@permissions~executable-files:~$ /challenge/run
+Successful execution! Here is your flag:
+pwn.college{APkTSF_qNtPbFzW9z7oqQFe6Kf1.dJTM2QDL4ETN0czW}
+```
+Same concept as the previous question. Just made the file executable with x this time.
+
