@@ -90,7 +90,7 @@ pwn.college{cz85u3OfG2Ffe3qqjzXU9qSyBjv.dVzN0UDL4ETN0czW}
 We learnt how to store the output of a command into a variable. 
 Here, we used the first command, i.e. PWN=$(/challenge/run), to store the output of /challenge/run in the variable PWN.
 Then, we used the second command, i.e. echo "$PWN" to read the flag stored in the variable PWN.
-The format for storing the output is <VARIABLE>=$(OUTPUT COMMAND)
+The format for storing the output is '<VARIABLE>=$(OUTPUT COMMAND)'
 ' ' can be used in place of $() , but it is not reccomended. 
 
 
