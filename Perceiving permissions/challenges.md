@@ -53,3 +53,44 @@ pwn.college{APkTSF_qNtPbFzW9z7oqQFe6Kf1.dJTM2QDL4ETN0czW}
 ```
 Same concept as the previous question. Just made the file executable with x this time.
 
+# 6) Permissison tweaking practice
+
+```bash
+chmod o-r /challenge/pwn
+chmod g-r /challenge/pwn
+chmod g+wx /challenge/pwn
+chmod o+x /challenge/pwn
+chmod a-rw g-w /challenge/pwn
+chmod go+r /challenge/pwn
+chmod a-rwx /challenge/pwn
+chmod a+x /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod a+r /flag
+hacker@permissions~permission-tweaking-practice:~$ cat /flag
+pwn.college{kcDPuYrKNCsQon1TlrZXJ1yCoTx.dBTM2QDL4ETN0czW}
+```
+Played a game with 8 rounds to get the flag file. 
+Made the flag file readable and then used cat to read into it.
+
+# 7) Permissions setting practice
+
+```bash
+chmod g=rw,o=wx /challenge/pwn
+chmod u=w,g=wx,o=w /challenge/pwn
+chmod g=-,o=wx /challenge/pwn
+chmod u=-,g=r,o=rwx /challenge/pwn
+chmod u=rwx,g=-,o=rx /challenge/pwn
+chmod u=rw,g=w,o=wx /challenge/pwn
+chmod u=-,g=wx,o=rw /challenge/pwn
+chmod u=r,g=x,o=wx /challenge/pwn
+hacker@permissions~permissions-setting-practice:~$ chmod a+r /flag
+hacker@permissions~permissions-setting-practice:~$ cat /flag
+pwn.college{Ao1NVZCg-jpAr3lEqIF8BpW_dIA.dNTM5QDL4ETN0czW}
+```
+Solved the same game but with = and - commands this time.
+= can be used to set the permissions simply.
+
+
+
+
+
+
