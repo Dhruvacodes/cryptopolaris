@@ -205,9 +205,19 @@ pwn.college{4SZm2BfuJCYbGGAnBqXf160VtSM.dlDN4QDL4ETN0czW}
 We don't need to suspend a process and resume it to run it in the background. 
 This can be done simply by appending a & to the command.
 
+# 9) Process Exit codes
 
-
-
+```bash
+hacker@processes~process-exit-codes:~$ /challenge/get-code
+Exiting with an error code!
+hacker@processes~process-exit-codes:~$ echo $?
+30
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 30
+CORRECT! Here is your flag:
+pwn.college{8AsJfgEv9rPa8IafZN8u-aEvaxI.dljN4UDL4ETN0czW}
+```
+Used the variable ? to access the error code of the previously executed command.
+Used the error code as an argument to run the /challenge/submit-code command.
 
 
 
